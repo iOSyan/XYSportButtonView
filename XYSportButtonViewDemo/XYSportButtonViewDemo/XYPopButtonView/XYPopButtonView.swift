@@ -21,16 +21,6 @@ class XYPopButtonView: UIView {
     lazy var lock: UIButton = UIButton(type: .custom)
     lazy var unlock: XYPopButton = XYPopButton()
     
-    // 提示长按
-//    lazy var popTip: PopTip = {
-//        let popTip = PopTip()
-//        popTip.bubbleColor = .white
-//        popTip.offset = 5
-//        popTip.textColor = kColorTextBlack
-////        popTip.shouldDismissOnTapOutside = true
-//        return popTip
-//    }()
-    
     lazy var margin: CGFloat = 8
     
     lazy var buttonHeight = self.height
@@ -149,11 +139,6 @@ class XYPopButtonView: UIView {
         self.lock.centerX = self.stop.centerX + self.stop.width/2 + marg + self.lock.width/2
     }
     
-    func showPopTip(_ view: UIView) {
-        // 提示需要长按
-//        popTip.show(text: "长按", direction: .up, maxWidth: 200, in: self, from: view.frame, duration: 1.0)
-    }
-    
     //MARK: - 点击事件
     @objc func playClick() {
 //        weak var weakSelf = self
@@ -188,10 +173,6 @@ class XYPopButtonView: UIView {
                 //            self.play.selected = !self.play.selected;
             }
         }
-    }
-    
-    @objc func stopClick() {
-        showPopTip(stop)
     }
     
     @objc func lockClick() {
@@ -263,23 +244,11 @@ class XYPopButtonView: UIView {
         }
     }
     
-    @objc func unlockClick() {
-        showPopTip(unlock)
-    }
-    
     @objc func mapClick() {
         if let mapClickBlock = mapClickBlock {
             mapClickBlock()
         }
     }
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
 
 }
 
