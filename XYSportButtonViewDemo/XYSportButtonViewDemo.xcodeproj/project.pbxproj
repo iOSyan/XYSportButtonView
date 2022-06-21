@@ -13,6 +13,8 @@
 		642C1A1628616F9D007631D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642C1A1428616F9D007631D2 /* Main.storyboard */; };
 		642C1A1828616F9F007631D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 642C1A1728616F9F007631D2 /* Assets.xcassets */; };
 		642C1A1B28616F9F007631D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 642C1A1928616F9F007631D2 /* LaunchScreen.storyboard */; };
+		642C1A272861ABFD007631D2 /* XYPopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642C1A252861ABFD007631D2 /* XYPopButton.swift */; };
+		642C1A282861ABFD007631D2 /* XYPopButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642C1A262861ABFD007631D2 /* XYPopButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		642C1A1728616F9F007631D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		642C1A1A28616F9F007631D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		642C1A1C28616F9F007631D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		642C1A252861ABFD007631D2 /* XYPopButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYPopButton.swift; sourceTree = "<group>"; };
+		642C1A262861ABFD007631D2 /* XYPopButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYPopButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +67,18 @@
 				642C1A1728616F9F007631D2 /* Assets.xcassets */,
 				642C1A1928616F9F007631D2 /* LaunchScreen.storyboard */,
 				642C1A1C28616F9F007631D2 /* Info.plist */,
+				642C1A242861ABFD007631D2 /* XYPopButtonView */,
 			);
 			path = XYSportButtonViewDemo;
+			sourceTree = "<group>";
+		};
+		642C1A242861ABFD007631D2 /* XYPopButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				642C1A252861ABFD007631D2 /* XYPopButton.swift */,
+				642C1A262861ABFD007631D2 /* XYPopButtonView.swift */,
+			);
+			path = XYPopButtonView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				642C1A282861ABFD007631D2 /* XYPopButtonView.swift in Sources */,
+				642C1A272861ABFD007631D2 /* XYPopButton.swift in Sources */,
 				642C1A1328616F9D007631D2 /* ViewController.swift in Sources */,
 				642C1A0F28616F9D007631D2 /* AppDelegate.swift in Sources */,
 				642C1A1128616F9D007631D2 /* SceneDelegate.swift in Sources */,
