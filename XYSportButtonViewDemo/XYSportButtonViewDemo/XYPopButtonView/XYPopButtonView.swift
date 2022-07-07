@@ -79,7 +79,6 @@ class XYPopButtonView: UIView {
             }
         }
         stop.centerButton.addTarget(self, action: #selector(stopClick), for: .touchUpInside)
-        
 
         play.frame = CGRect(x: 0, y: 0, width: buttonWidth, height: buttonHeight)
         play.setImage(UIImage(named: "walk_bottom_button_continue"), for: .normal)
@@ -173,6 +172,10 @@ class XYPopButtonView: UIView {
                 //            self.play.selected = !self.play.selected;
             }
         }
+    }
+    
+    @objc func stopClick() {
+        
     }
     
     @objc func lockClick() {
